@@ -6,11 +6,10 @@ public class Palindrome {
 
 	public static void main(String[] args) 
 	{
-		// TODO Auto-generated method stub
 		Scanner Obj = new Scanner(System.in);
-		System.out.println("Enter the number: ");
+		System.out.println("Enter a number: ");
 		int num = Obj.nextInt();
-		int rsnum = 0;
+		int sum = 0;
 		int rem;
 		if (num < 10)
 		{
@@ -22,10 +21,10 @@ public class Palindrome {
 			while(num!=0)
 			{
 				rem = num % 10;
-				rsnum = rsnum * 10 + rem;
+				sum = sum * 10 + rem;
 				num = num / 10;
 			}
-			if (rsnum==actualnum)
+			if (sum==actualnum)
 			{
 				System.out.println(actualnum + " is a palindrome ");
 			}

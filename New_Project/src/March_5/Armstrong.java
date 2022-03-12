@@ -2,28 +2,29 @@ package March_5;
 
 import java.util.Scanner;
 
-public class Armstrong {
+public class Armstrong 
+{
 	public static void main(String[] args) 
 	{
-		// TODO Auto-generated method stub
-		Scanner myObj = new Scanner(System.in);
-		System.out.println("Enter 3 digit number: ");
-		int num = myObj.nextInt();
-		int originalnum,temp,result=0;
-		originalnum = num;
-		for(;originalnum!=0;originalnum=originalnum/10)
-		{
-			temp = originalnum%10;
-			result = result + temp*temp*temp;
-		}
-	
-		if (num==result)
-		{
-			System.out.println(num + " is armstrong number ");
-		}
-		else
-		{ 
-			System.out.println(num + " is not armstrong number ");
-		}
+		Scanner Obj = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int num = Obj.nextInt();
+		int sum = 0;
+		int rem;
+		int actualnum = num;
+			while(num!=0)
+			{
+				rem = num % 10;
+				sum = sum + (rem*rem*rem);
+				num = num / 10;
+			}
+			if (sum==actualnum)
+			{
+				System.out.println(actualnum + " is an armstrong number ");
+			}
+			else
+			{ 
+				System.out.println(actualnum + " is not an armstrong number ");
+			}
 	}
 }
