@@ -11,7 +11,7 @@ public class Palindrome {
 		int num = Obj.nextInt();
 		int sum = 0;
 		int rem;
-		if (num < 10)
+		if (num <= 100)
 		{
 			System.out.println(num + " is not a palindrome ");
 		}
